@@ -1,0 +1,80 @@
+<template name="LandingTemplate">
+	<nav class="navbar navbar-dark bg-inverse">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/logo.png" alt="Logo">
+        </a>
+        <a class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingNavbarInverse" aria-expanded="false" aria-controls="collapsingNavbarInverse">
+        &#9776;
+      </a>
+        <a class="navbar-toggler navbar-toggler-custom hidden-md-up pull-xs-right" data-toggle="collapse" href="#collapsingMobileUserInverse" aria-expanded="false" aria-controls="collapsingMobileUserInverse">
+          <span class="icon-user"></span>
+        </a>
+        <div id="collapsingNavbarInverse" class="collapse navbar-toggleable-custom" role="tabpanel" aria-labelledby="collapsingNavbarInverse">
+          <ul class="nav navbar-nav pull-xs-right">
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="/TreasureHunt" target="_blank">Treasure Hunt<br /> Feb 15th - 20th</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#">Link3</a>
+            </li>
+            <li class="nav-item nav-item-toggable active">
+              <a class="nav-link" href="#">Link3 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-toggable">
+              <a class="nav-link" href="#" target="_blank">Link4</a>
+            </li>
+            <li class="nav-item nav-item-toggable hidden-sm-up">
+              <form class="navbar-form">
+                <input class="form-control navbar-search-input" type="text" placeholder="Type your search &amp; hit Enter&hellip;">
+              </form>
+            </li>
+            <li class="nav-item dropdown hidden-sm-down">
+              <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenuInverse2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?type=large" height="40" width="40" alt="Avatar" class="img-circle"> <span class="icon-caret-down"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenuInverse2">
+                <div class="media">
+                  <div class="media-left">
+                    <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?type=large" height="60" width="60" alt="Avatar" class="img-circle">
+                  </div>
+                  <div class="media-body media-middle">
+                    <h5 class="media-heading">{{currentUser.services.facebook.name}}</h5>
+                    <h6>{{currentUser.services.facebook.email}}</h6>
+                  </div>
+                </div>
+                <a href="#" class="logoutUser dropdown-item text-uppercase text-muted">Log out</a>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div id="collapsingMobileUserInverse" class="collapse navbar-toggleable-custom dropdown-menu-custom p-x-1 hidden-md-up" role="tabpanel" aria-labelledby="collapsingMobileUserInverse">
+          <div class="media m-t-1">
+            <div class="media-left">
+              <img src="http://graph.facebook.com/{{currentUser.services.facebook.id}}/picture/?type=large" height="60" width="60" alt="Avatar" class="img-circle">
+            </div>
+            	<div class="media-body media-middle">
+              		<h5 class="media-heading">{{currentUser.services.facebook.name}}</h5>
+              		<h6>{{currentUser.services.facebook.email}}</h6>
+            	</div>
+          	</div>
+            <a href="#" class="logoutUser dropdown-item text-uppercase text-muted">Log out</a>
+          </div>
+      </div>
+    </nav>
+<div class="container">
+    <!--  code for question html   -->
+    <h1>About ATF</h1>
+    <div class="well">
+        Accolite Tech Fest<br />
+        It is yearly organised event, hosting by BT team this time<br />
+        Lots of event to bring all together for some time, more fun, more prizes :)
+    </div>
+</div>
+
+<link href="css/landing.css" rel="stylesheet">
+<script src="js/landing.js"></script>
+</template>

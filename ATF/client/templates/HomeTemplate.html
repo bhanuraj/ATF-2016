@@ -1,0 +1,26 @@
+<template name="HomeTemplate">
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Welcome TO ATF</h1>
+                        <h3>Please login with Facebook</h3>
+                        <hr class="intro-divider">
+                        {{#if currentUser}}
+                            {{currentUser.services.facebook.name}} -
+                            {{currentUser.services.facebook.gender}}
+                            {{currentUser.services.facebook.id}}
+                            <button id="logout">Logout</button>
+                        {{else}}
+                            <button id="facebook-login" class="btn btn-default">Login with Facebook</button>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="css/home.css" rel="stylesheet">
+</template>
+

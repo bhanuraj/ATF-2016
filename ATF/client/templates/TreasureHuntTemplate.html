@@ -1,0 +1,62 @@
+<template name="TreasureHuntTemplate">
+	<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+
+			</div>
+			<div class="codrops-header">
+				<h1>{{currentUser.services.facebook.name}} <span>Your currenty playing Level 1</span></h1>
+			</div>
+			<section>
+				<form id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1">Who wrote "The Satanic Verses?"</label></span>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<span><label for="q2">Who painted Sistine Chapel?</label></span>
+								<input id="q2" name="q2" type="text"/>
+							</li>
+							<li>
+								<span><label for="q3">Writers of the movie The Matrix Trilogy?</label></span>
+								<input id="q3" name="q3" type="text"/>
+							</li>
+							<li>
+								<span><label for="q4">Southern tip of India?</label></span>
+								<input id="q4" name="q4" type="text"/>
+							</li>
+							<li>
+								<span><label for="q5">Who wrote Surya Sidhantha?</label></span>
+								<input id="q5" name="q5" type="text"/>
+							</li>
+							<li>
+								<span><label for="q6">India's first satellite into space?</label></span>
+								<input id="q6" name="q6" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send answers</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->
+			</section>
+		</div><!-- /container -->
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/demo.css" />
+<link rel="stylesheet" href="css/component.css" />
+
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/stepsForm.js"></script>
+<script src="js/Treasurehunt.js"></script>
+</template>
